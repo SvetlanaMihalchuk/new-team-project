@@ -1,0 +1,131 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.49);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.modal {
+  background-color: #333335;
+  border-radius: 5px;
+  width: 650px;
+  min-height: 854px;
+  padding-top: 87px;
+  padding-right: 67px;
+  padding-bottom: 64px;
+  padding-left: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-btn-close {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffeb38;
+  position: absolute;
+  top: 41px;
+  right: 30px;
+  cursor: pointer;
+  border: none;
+}
+.modal-subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.modal-subtitle::before {
+  content: "";
+  width: 143px;
+  height: 2px;
+  background-color: #ffeb38;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.255;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+.modal-title-part {
+  color: #ffeb38;
+}
+.modal-text {
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  color: #fff;
+}
+.modal-form {
+}
+.modal-label {
+  margin-bottom: 23px;
+  display: block;
+}
+.modal-input,
+.modal-message {
+  border-radius: 5px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #cacaca;
+  background-color: transparent;
+  outline: transparent;
+  padding-left: 21px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  color: #f1f1f1;
+}
+.modal-input::placeholder,
+.modal-message::placeholder {
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  color: #f1f1f1;
+}
+
+.modal-input:focus {
+  border-color: yellow;
+}
+.modal-label-msg {
+  margin-bottom: 33px;
+  display: block;
+}
+.modal-message {
+  height: 149px;
+  resize: none;
+  padding: 21px;
+}
+.modal-send-btn {
+  border-radius: 5px;
+  min-width: 181px;
+  height: 48px;
+  background-color: #ffeb38;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #0e0e0e;
+  border: none;
+  cursor: pointer;
+}
